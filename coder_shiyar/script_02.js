@@ -160,3 +160,83 @@ while (i <= count) {
 // counter
 // condition != infinity
 // increment counter++
+
+// Lesson 26
+// For Loop
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// Lesson 27
+// Do While Loop
+let j = 1;
+let count2 = 20;
+do {
+  console.log(i);
+  i++;
+} while (i <= count2);
+// continue and break
+for (let i = 0; i < 10; i++) {
+  if (i == 5) break;
+  console.log(i);
+}
+// Output : 0 1 2 3 4
+for (let i = 0; i < 10; i++) {
+  if (i == 5) continue;
+  console.log(i);
+}
+// Output : 0 1 2 3 4 no_5 6 7 8 9
+
+// Lesson 28
+// forEach
+// 1 - forEach With Arrays
+let myArr = ["Noor", "Mohamed", "Ahmad"];
+for (let el1 in myObject) {
+  console.log(myArr[el]);
+}
+
+// 2 - forEach With Arrays
+myArr.forEach(function (el) {
+  console.log(el);
+});
+
+// Example :
+/*
+  let el = document.getElementById("list");
+  let arr = ["Noor", "Mohamed", "Salah", "Ahmad", "Abd", "Mohamed"];
+  for (let i = 0; i < arr.length; i++) {
+    el.innerHTML += `
+          <li class="li">
+              <a href="index.html">${arr[i]}</a>
+          </li>
+      `;
+  }
+*/
+
+// Lesson 29
+// 3 - forEach With Objects
+let mmoo1 = {
+  name: "Mohamed Nour",
+  age: 24,
+  leve: "5 Five",
+};
+for (let k in mmoo1) {
+  console.log(mmoo1[`${k}`]);
+}
+
+let mmoo2 = {
+  user1: { name: "Mohamed Nour", age: 24, level: "5 Five" },
+  user2: { name: "Mohamed", age: 23, level: "1 One" },
+  user3: { name: "Nour", age: 20, level: "2 Two" },
+};
+for (let k in mmoo2) {
+  console.log(mmoo2[`${k}`].name);
+  console.log(mmoo2[`${k}`].age);
+  console.log(mmoo2[`${k}`].level);
+}
+// 4 - forEach With Objects
+Object.keys(mmoo2).forEach(function (el) {
+  console.log(mmoo2[`${el}`].name);
+  console.log(mmoo2[`${el}`].age);
+  console.log(mmoo2[`${el}`].level);
+});
