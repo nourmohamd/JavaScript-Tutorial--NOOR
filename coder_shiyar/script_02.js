@@ -4,11 +4,11 @@
 // Lesson 15
 // ------------------------------------------------ String Rules --------------------------------------
 /**
- * 1 - toUpperCase(String) ---> تحويل للأحرف الكبيرة
- * 2 - toLowerCase(String) --> تحويل للأحرف الصغيرة
+ * 1 - toUpperCase() ---> تحويل للأحرف الكبيرة
+ * 2 - toLowerCase() --> تحويل للأحرف الصغيرة
  * 3 - concat(String) --> دمج سلسلتين نصيتين
  * 4 - trim() --> حذف الهوامش من بداية ونهاية النص
- * 5 - charAt("One Character") --> يعيد لك الحرف للرقم الذي تضعه ضمنه في حال وجده أو -1 في حال لم يجده
+ * 5 - charAt(indexOfCharacter) --> يعيد لك الحرف للرقم الذي تضعه ضمنه في حال وجده أو -1 في حال لم يجده
  */
 let s1 = "Mohamed Nour Abdo";
 console.log(s1.toUpperCase());
@@ -94,6 +94,7 @@ arr.forEach(function (el, ind, arr) {
 // delete ob.nameofkey
 // -----update key
 // ob.nameofkey = newvalye
+
 // Lesson 21
 // -----put object inside object
 // let ob = {d1:{Values}, d2:{Values}}
@@ -222,6 +223,7 @@ let mmoo1 = {
 };
 for (let k in mmoo1) {
   console.log(mmoo1[`${k}`]);
+  console.log(mmoo1[k]);
 }
 
 let mmoo2 = {

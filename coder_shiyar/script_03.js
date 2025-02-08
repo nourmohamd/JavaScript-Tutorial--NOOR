@@ -177,18 +177,20 @@ ob5.printa();
 
 // Lesson 45
 // ----------------------------------------------- Local Storage --------------------------------------
-// Storaged from 5 to 10 Mega Byte
+// Storaged from 5 to 10 Mega Byte (( Durable Storage - تخزين دائم ))
 /*
     1 - localStorage.setItem("keyName", "Value For Key");
 
     2 - localStorage.getItem("keyName");
 
-    3 - for Update : localStorage.setItem("keyName", "Value For Key");
+    3 - for Update : localStorage.setItem("keyName", "New Value For Key");
 
     4 - localStorage.removeItem("keyName");
 
     5 - localStorage.clear();
 
+    6 - localStorage.length
+    
     in Google Chrome We Found LocalStorage in <<< Application >>>
 */
 let aa = {
@@ -198,7 +200,7 @@ let aa = {
 };
 localStorage.setItem("data", JSON.stringify(aa));
 
-let a222 = localStorage.getItem("data");
+let a222 = JSON.parse(localStorage.getItem("data"));
 
 // JSON.stringify('d') ===> For Storage Object in local Storage
 // JSON.parse('d') ===> For Get Data Object From Local to code
