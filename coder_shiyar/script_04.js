@@ -55,3 +55,47 @@ if (fileName === "home.html") {
 } else if (fileName === "contact.html") {
 } else if (fileName === "portfolio.html") {
 }
+
+// Lesson 51
+// document.URL ===> Return Full URL For This Page
+// document.documentURI ===> Same Document.URL
+// document.domain ===> For Return Domain Of This Page Such As ( www.youtube.com )
+// Remember : Scheme://Prefix.domain:port/pathname/filename
+// الموقع الغير منشور ليس له دومين
+
+// Lesson 52
+// document.title ===> For get and set title of page
+// document.body ===> for select body element
+// document.head ===> for select head element and add new element or remove element from it
+
+// Lesson 53
+// document.images
+// document.embeds
+// document.links
+// document.forms
+// length ===> يحدد عدد العناصر المتواجد في المصفوفات أو الميزات السابقة
+console.log(document.images.length);
+console.log(document.embeds.length);
+console.log(document.links.length);
+console.log(document.forms.length);
+
+// Example: You can after select element to add new attributes or update to it
+document.images[0].src = "img1.png";
+// لحتى تعمل تعديلات على عدة عنصر اعمل فور لووب عليهم
+
+// Lesson 54 ===> عمل موقع يدعم لغتين العربية والانكليزية ويتم تحديد اللغة عبر المستخدم
+
+// Lesson 55
+// ----------------------------------------------- Mouse Events -------------------------------------------
+/*
+    1 - click ===> عند النقر عل عنصر ما
+    2 - contextmenu ===> عند النقر بالزر الايمن للماوس
+    3 - dblclick ===> عند النقر مرتين متتاليتين
+    4 - mousedown ===> عند النقر بأي كبسة من الماوس
+    5 - mouseenter ===> عند مرور أو تحريك الماوس فوق العنصر
+    6 - mouseleave ===> عندما يمر الماوس من العنصر ثم يخرج منه
+    7 - mousemove ===> عندما يتحرك الماوس فوق العنصر
+    8 - mouseout ===> عندما يتحرك الماوس خارج العنصر واولاده
+    9 - mouseover ===> عندما يتحرك الماوس داخل العنصر وأولاده
+    10 - mouseup ===> عند النقر بأي كبسة فوق عنصر معين
+*/
