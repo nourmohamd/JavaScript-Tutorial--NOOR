@@ -99,3 +99,134 @@ document.images[0].src = "img1.png";
     9 - mouseover ===> عندما يتحرك الماوس داخل العنصر وأولاده
     10 - mouseup ===> عند النقر بأي كبسة فوق عنصر معين
 */
+
+// Lesson 56
+// 1 - onbeforeunload and beforeunload()
+// يعرض صندوق منبق عندما تريد مغادرة هذه الصفحة
+// Example :
+// in HTML
+// <body onbeforeunload="return beforeunload()"> </body>
+// in JS
+function beforeunload() {
+  return "";
+}
+// 2 - onbeforeprint and beforeprint()
+// يعرض لك رسالة قبل فتح الطابعة
+// Example :
+// in HTML
+// <body onbeforeprint="return beforeprint()"> </body>
+// in JS
+function beforeprint() {
+  alert("Open Print");
+}
+// 3 - onafterprint and afterprint()
+// يعرض لك رسالة بعد الطابعة
+// Example :
+// in HTML
+// <body onafterprint="return afterprint()"> </body>
+// in JS
+function afterprint() {
+  alert("Print Is Completed!");
+}
+
+// Lesson 57
+// ------------------------------------------------ Keyboard Events ------------------------------------------
+// 1 - onkeyup - keyup ===> عند النقر على أي كبسة في الكيبورد ثم رفع اصبعك عنه يحدث شيء معين
+// 2 - onkeydown - keydown ===> عند النقر فقط قبل رفع اصبعك عن الكبسة
+// 3 - onkeypress - keypress ===> بمجرد الضغط والاستمرار بالضغط
+// We Add These Events For Body Element Only
+/*
+1 -
+<body onkeyup="A(event)">
+</body>
+
+2 -
+<body onkeydown="A(event)">
+</body>
+
+3 -
+<body onkeypress="A(event)">
+</body>
+*/
+
+/*
+Attributes For Event :
+1 - event.key ===> Return The Button We Clicked it such as S - G - 1 - Enter ...
+2 - event.code ===> Return the code of the button we clicked it such as KeyB - KeyO - Key6 ...
+*/
+function a1(e) {
+  if (e.key === "s") {
+  } else if (e.key === "S" || e.code === "KeyS") {
+  }
+}
+function a2(e) {
+  if (e.key === "r") {
+    location.reload();
+  }
+}
+function a3(e) {
+  alert(e.key + " " + e.code);
+}
+
+// Lesson 58
+// -------------------------------------------- Copy Paste Cut Events ------------------------------------
+/*
+1 - oncopy - copy نسخ
+2 - oncut - cut قص
+3 - onpaste - paste لصق
+
+هذه الاحداث تضاف لأي عنصر تريده
+*/
+// Way 1 :
+/**
+ * HTML
+ * <body oncopy="copy()" ></body>
+ * <h3 oncopy="copy()" ></h3>
+ * JS
+ * function copy() {
+ *  cosole.log("Copied Text!")
+ * }
+ */
+
+// Way 2 : for all elements
+document.addEventListener("copy", function copy() {
+  console.log("Copied Text!");
+});
+
+// Way 3 :
+class A {
+  constructor() {
+    let a = document.body;
+    A.addEventListener("cut", function cut() {
+      console.log("Cut Text!");
+    });
+  }
+}
+onload = new A();
+
+// Lesson 59
+// ------------------------------------------- Form Events -----------------------------------------
+// onsubmit - submit
+// preventDefault() ===> منع افتراضي
+
+// In HTML
+/*
+<form id="form1" method="GET">
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" />
+    <br />
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" />
+    <input type="submit" value="Send Data" />
+</form>
+*/
+// In JS
+document.forms[0].addEventListener("submit", function s(event) {
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+  if (email.value === "abdonoor684@gmail.com" && password.value === "NNNNNNN") {
+    return true;
+  } else {
+    event.preventDefault();
+  }
+});
