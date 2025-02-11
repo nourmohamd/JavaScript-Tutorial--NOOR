@@ -198,14 +198,17 @@ class A {
   constructor() {
     let a = document.body;
     A.addEventListener("cut", function cut() {
-      console.log("Cut Text!");
+      this.p();
     });
+  }
+  p() {
+    console.log("Cut Text!");
   }
 }
 onload = new A();
 
 // Lesson 59
-// ------------------------------------------- Form Events -----------------------------------------
+// ------------------------------------------- Form Events Submit -----------------------------------------
 // onsubmit - submit
 // preventDefault() ===> منع افتراضي
 

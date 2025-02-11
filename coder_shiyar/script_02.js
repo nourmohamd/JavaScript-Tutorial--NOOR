@@ -59,7 +59,7 @@ console.log(arr[0]); // 1
 console.log(arr[4]); // [4, 5, 6]
 console.log(arr[3].length); // 11
 console.log(arr.length); // 5
-console.log(arr[a.length - 1]); // last element [4, 5, 6]
+console.log(arr[arr.length - 1]); // last element [4, 5, 6]
 console.log(arr[4][0]); // 4
 
 // delete element from array
@@ -237,6 +237,7 @@ for (let k in mmoo2) {
   console.log(mmoo2[`${k}`].level);
 }
 // 4 - forEach With Objects
+// Transform Object To Array With: Object.keys(objectName)
 Object.keys(mmoo2).forEach(function (el) {
   console.log(mmoo2[`${el}`].name);
   console.log(mmoo2[`${el}`].age);

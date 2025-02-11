@@ -161,8 +161,8 @@ onload = function printHi() {
 // addEventListener
 /*
     Form:
-    el.addEventListener("event without on --> click, load",
-    function () {} or () => {});
+    el.addEventListener("event without on --> click, load, ...",
+    function () {} or () => {} or function name() {});
 */
 
 // Lesson 44
