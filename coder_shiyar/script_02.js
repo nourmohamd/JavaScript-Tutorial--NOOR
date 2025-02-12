@@ -25,16 +25,17 @@ console.log(s1.charAt(2)); // h
  * 9 - search("Any Value") --> Searchs about this value returns
  * 10 - startsWith("Any Value") --> Returns False or True
  * 11 - endsWith("Any Value") --> Returns False or True
+ * 12 - includes("Value") ===> True Or False
  */
 
 // Lesson 17
 /**
- * 12 - replace(Old Value, New Value)
+ * 13 - replace(Old Value, New Value)
  * Old Value : "o" , /\character or statement/gi
  * g : global
  * i : upper or lower case
  * new : Any Value
- * 13 - substring(start, end)
+ * 14 - substring(start, end)
  * Start:
  * 	Required.
  *  Start position.
