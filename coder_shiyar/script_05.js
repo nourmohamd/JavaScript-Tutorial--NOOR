@@ -147,7 +147,7 @@ element.blur();
 // ------------------------------------------- JavaScript Orientation ----------------------------------------
 // تنفيذ أوامر معينة حسب وضعية شاشة المستخدم سواء كان أفقي أم عمودي
 /*
-window.screen.orientation Values is 
+window.screen.orientation.type Values is 
 1 - portrait ===> عمودي
 2 - landscape ===> أفقي
 3 - portrait-primary ===> عمودي نظامي
@@ -157,12 +157,16 @@ window.screen.orientation Values is
 */
 // Example :
 function a() {
-  if (window.screen.orientation === "portrait") {
-  } else if (window.screen.orientation === "landscaep") {
+  if (window.screen.orientation.type === "portrait") {
+    document.body.style.backgroundColor = "red";
+  } else if (window.screen.orientation.type === "landscaep") {
+    document.body.style.backgroundColor = "yellow";
   } else {
+    document.body.style.backgroundColor = "blue";
   }
 }
 addEventListener("load", a);
+addEventListener("orientationchange", a);
 
 // Lesson 65
 // ---------------------------------------------- Navigator UserAgent ---------------------------
@@ -179,8 +183,24 @@ if (window.navigator.userAgent.toLowerCase().includes("android 5.0")) {
 } else if (window.navigator.userAgent.toLowerCase().includes("win64")) {
 } else if (window.navigator.userAgent.toLowerCase().includes("win32")) {
 } else if (
-  window.navigator.userAgent.toLowerCase().includes("windows") ||
+  window.navigator.userAgent.toLowerCase().includes("windows") &&
   window.navigator.userAgent.toLowerCase().includes("10.0")
 ) {
 } else {
+}
+
+// Lesson 66
+// ------------------------------------------------ Navigator UserAgent --------------------------
+// تنفيذ أوامر تبعاً لنوع المتصفح الذي بستخدمه المستخدم
+let user_system = window.navigator.userAgent.toLowerCase();
+if (user_system.includes("chrome")) {
+  alert("أنت تستخدم غوغل كروم");
+}
+// إذا كنت تريد تشغيل الموقع على كل الهواتف
+if (
+  /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(
+    window.navigator.userAgent
+  )
+) {
+  console.log("You Used Phone");
 }
