@@ -204,3 +204,46 @@ if (
 ) {
   console.log("You Used Phone");
 }
+
+// Lesson 67 & 68
+// مراجعة لما سبق و إنشاء صندوق لتحميل التطبيق
+/*
+1 - Create Section Element and img and text and X for close that section
+2 - When we click on X Element Will Close That Section
+3 - When we click on Button Download Will be move to place of download
+      window.open("Url", "_blank");
+4 - in the begin the section doesn't find after a few time will show section
+      window.setTimeout(function () {}, n * 1000)
+Note: &times; ===> X
+      &nbsp; ===> For Space
+*/
+
+// Lesson 69
+// ----------------------------------------------- Window Functions ---------------------------
+/*
+1 - window.open("URL", "_blank | _self"); ===> Open New Page
+2 - window.top.close(); ===> Close Page (التي فتحت عبر جافاسكربت)
+3 - window.stop(); ===> Stop Load Any Page
+4 - window.print(); ===> For Open The Printer Page
+*/
+
+// Lesson 70
+/*
+5 - window.prompt("Message", "Default"); ===> For Show Box And It Has One Field And Return The Value
+// يستخدم لوضع حقل لكلمة السر قبل أن يدخل المستخدم
+6 - window.confirm("Message") ===> Return True | False (Agree | No Agree)
+*/
+// Example 1:
+let a = window.prompt("Enter Your Password ", "*****");
+// جواب المستخدم سيخزن في هذا المتغير
+if (a === "MohamedNour") {
+  alert("Welcome Mohamed Nour");
+} else {
+  window.top.close();
+}
+
+// Example 2:
+let b = window.confirm("Are You Sure You Want To Sign Out ?");
+if (b === true) {
+  window.top.close();
+}
