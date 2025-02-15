@@ -16,13 +16,12 @@ console.log(s1.toLowerCase());
 console.log(s1.concat(" : 5")); // Mohamed Nour Abdo : 5
 console.log(s1.trim());
 console.log(s1.charAt(2)); // h
-
 // Lesson 16
 /**
  * 6 - length
  * 7 - indexOf("String", start Position) --> same chartAt but it searchs from begin to end
  * 8 - lastIndexOf("String", start Position) --> same indexOf but it searchs from end to begin
- * 9 - search("Any Value") --> Searchs about this value returns
+ * 9 - search("Any Value") --> Searchs about this value returns Index it
  * 10 - startsWith("Any Value") --> Returns False or True
  * 11 - endsWith("Any Value") --> Returns False or True
  * 12 - includes("Value") ===> True Or False
@@ -120,6 +119,7 @@ console.log(ob["o2"]["color"]); // yellow
  * if(){} ele{}
  * if(){} else if(){} else{}
  * Comparison Operators : > < >= <= == === !=
+ * Conditional (Ternary) Operator : (Condition)?True:False;
  */
 
 // Lesson 23
@@ -194,7 +194,7 @@ for (let i = 0; i < 10; i++) {
 // 1 - forEach With Arrays
 let myArr = ["Noor", "Mohamed", "Ahmad"];
 for (let el1 in myObject) {
-  console.log(myArr[el]);
+  console.log(myArr[el1]);
 }
 
 // 2 - forEach With Arrays
