@@ -80,3 +80,105 @@ document.getElementsByTagName("p")[0].addEventListener("click", function () {
 3 - history.go(Number) ===> if Number is - ===> Go Back Otherwise : Go Front
 4 - history.length ===> For Get Length Of Pages Saved
 */
+
+// Lesson 78
+// --------------------------------------- Date ----------------------------------------
+// Note : We Can Get Element has Id In JavaScript By Id Name Only Without Selectors
+// All Functions You Needed it In Date Class
+// Full Example :
+let tm = new Date();
+// 1 - Way One
+console.log(tm.getFullYear()); // For Get Current Year
+console.log(tm.getMonth()); // For Get Current Month [0 ---> 11]
+// tm.getMonth() + 1 = This Montth
+// If That Doesn't Work Put This : parseInt(tm.getMonth()) + 1
+
+console.log(tm.getDate()); // For Get Current Day of Month
+console.log(tm.getHours()); // For Get Current Hour [0 - 23]
+console.log(tm.getMinutes()); // For Get Current Minutes [0 - 59]
+console.log(tm.getSeconds()); // For Get Current Seconds [0 - 59]
+console.log(tm.getMilliseconds()); // For Get Current Milliseconds [0 - 999]
+console.log(tm.getDay()); // For Get Current Day Of Week [0 - 6]
+console.log(tm.getTime()); // For Get Current Milliseconds From 1 Junary 1970 Until Now
+console.log(Date.now()); // For Get Current Milliseconds From 1 Junary 1970 Until Now
+
+// 2 - Way Two ( UTC )
+console.log(tm.getUTCFullYear()); // For Get Current Year
+console.log(tm.getUTCMonth()); // For Get Current Month [0 ---> 11]
+// tm.getMonth() + 1 = This Montth
+// If That Doesn't Work Put This : parseInt(tm.getMonth()) + 1
+
+console.log(tm.getUTCDate()); // For Get Current Day of Month
+console.log(tm.getUTCHours()); // For Get Current Hour [0 - 23]
+console.log(tm.getUTCMinutes()); // For Get Current Minutes [0 - 59]
+console.log(tm.getUTCSeconds()); // For Get Current Seconds [0 - 59]
+console.log(tm.getUTCMilliseconds()); // For Get Current Milliseconds [0 - 999]
+console.log(tm.getUTCDay()); // For Get Current Day Of Week [0 - 6]
+console.log(tm.getTime()); // For Get Current Milliseconds From 1 Junary 1970 Until Now
+console.log(Date.now()); // For Get Current Milliseconds From 1 Junary 1970 Until Now
+
+// Lesson 79 && 80
+// Make Website For Get Time
+
+// Lesson 81
+// ---------------------------------------- Append Child -------------------------------
+// This is Very Important Functions
+/*
+1 - let el = document.createElement("Name Of Element By HTML")
+2 - let text = document.createTextNode("Text")
+3 - el.appendChild( text )
+*/
+// Example 1:
+let list = document.querySelector("ul");
+function a() {
+  let li = document.createElement("li");
+  let inp = document.querySelector("input").value;
+  let text = document.createTextNode(inp);
+  li.appendChild(text);
+  list.appendChild(li);
+}
+// Example 2:
+let audio = document.createElement("audio");
+audio.src = "audio.ogg";
+audio.controls = "true";
+document.body.appendChild(audio);
+
+// Lesson 82
+// ------------------------------------- ClassList Class ----------------------------------
+/*
+1 - classList.add("C1", "C2", "C2", ...) ===> For Add New Class
+2 - classList.contains("NameClass") ===> Check About Class And Return True | False
+3 - classList.remove("C1", "C2", "C3", ...) ===> For Remove Class Or More
+4 - classList.item(index) ===> Get Class By Index (0 ===> n-1)
+5 - 
+*/
+
+// Lesson 83
+// ------------------------------- Screen ( Width & Height ) ----------------------------
+/*
+1 - window.screen.width ===> For Get Width Of Screen
+2 - window.screen.height ===> For Get Height Of Screen
+*/
+// Example 1:
+if (window.screen.width === 1366 && window.screen.height === 768) {
+  alert("Yes ");
+}
+
+// Lesson 84
+// ------------------------------ Control Of Audio Element In JS --------------------------------
+/*
+1 - audioElement.load() ===> For Reload Music
+2 - audioElement.play() ===> For Play Music
+3 - audioElement.pause() ===> For Pause Music
+*/
+
+// Lesson 85
+// Other Methods For Audio
+/*
+4 - audioElement.volume ===> For Get | Set Volume For Audio (0.0 ---> 1.0)
+5 - audioElement.src ===> For Get | Set Src Of Audio
+6 - audioElement.playbackRate() ===> For Control Of Speed Audio (0.0 ---> 2.0 (أقصى سرعة))
+*/
+
+// Lesson 86
+// Make Website For Radio
