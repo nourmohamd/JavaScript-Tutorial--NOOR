@@ -150,7 +150,7 @@ document.body.appendChild(audio);
 2 - classList.contains("NameClass") ===> Check About Class And Return True | False
 3 - classList.remove("C1", "C2", "C3", ...) ===> For Remove Class Or More
 4 - classList.item(index) ===> Get Class By Index (0 ===> n-1)
-5 - 
+5 - classList.length ===> For Get Length Of classList
 */
 
 // Lesson 83
@@ -180,5 +180,5 @@ if (window.screen.width === 1366 && window.screen.height === 768) {
 6 - audioElement.playbackRate() ===> For Control Of Speed Audio (0.0 ---> 2.0 (أقصى سرعة))
 */
 
-// Lesson 86
+// Lesson 86 - 87 - 88 - 89 - 90
 // Make Website For Radio
