@@ -205,7 +205,7 @@ let a222 = JSON.parse(localStorage.getItem("data"));
 // JSON.stringify('d') ===> For Storage Object in local Storage
 // JSON.parse('d') ===> For Get Data Object From Local to code
 // parseInt('data') ===> Transform from data to integer
-// parseFload('data') ===> Transform from data to Float
+// parseFloat('data') ===> Transform from data to Float
 // Simple Example :
 /*
 HTML :
