@@ -122,12 +122,12 @@ console.log(`Sum ==> 12 + 2 = (${12 + 2})`);
 
 // العمليات الحسابية
 
-console.log(10 + 20);
-console.log(10 - 20);
-console.log(10 * 20);
-console.log(10 / 20);
-console.log(10 ** 20);
-console.log(10 % 20);
+console.log(10 + 20);// Addition
+console.log(10 - 20);// Subtraction
+console.log(10 * 20);// Multiplication
+console.log(10 / 20);// Division
+console.log(10 ** 20);// Exponentiation
+console.log(10 % 20);// Modular Arithmetic Operator
 var f = 1;
 f++;
 console.log(f); // 2
