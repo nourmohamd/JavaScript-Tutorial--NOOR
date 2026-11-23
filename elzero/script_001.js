@@ -28,6 +28,11 @@ console.groupEnd();
 console.groupEnd();
 console.log("Mohamed");
 console.timeEnd("Time 1 ");
+console.groupCollapsed("G 3 :");
+console.log("E");
+console.log("F");
+console.groupEnd();
+// groupCollapsed Same group but it is closed
 
 console.table(["Mohamed", "Nour", "Abdo"]); /* Contents Array Important */
 console.log("Mohamed", "Nour");
