@@ -7,6 +7,7 @@
 
 // Output
 
+document.body.insertAdjacentHTML("beforeend","<h1>Hi, Everyone</h1>");
 document.write("Mohamed");
 // window.alert("Mohamed");
 // alert("Mohamed");
