@@ -161,6 +161,7 @@ console.log(-null);
 console.log(-undefined);
 console.log(-false);
 console.log(-true);
+console.log(Number("100"));
 // Type Casting
 // +, -, ""-2, false - true
 // هي عملية تحويل السلسلة المحرفية لأرقام
