@@ -257,7 +257,7 @@ console.log(q4.slice(-4, -1)); // Abd
 console.log(q4.slice(-4)); // Abdo
 // repeat(number of repeat)
 console.log(q4.repeat(2)); //Mohamed Nour AbdoMohamed Nour Abdo
-// split(splitter, number of piece)
+// split(separator, number of piece)
 console.log(q4.split(" ", 1));
 console.log(q4.split(" ", 2));
 console.log(q4.split(" "));
