@@ -265,14 +265,14 @@ console.log(q4.split(" "));
 console.log(q4.substring(0, 7));
 console.log(q4.substring(7, 0));
 console.log(q4.substring(-123131, 7));
-// substr(start, end not include)
+// substr(start, number of characters)
 console.log(q4.substr(0, 7));
 console.log(q4.substr(0, 4));
 console.log(q4.substr(-4));
-// includes("value",point of start) ===> bool
+// includes("search text",point of start) ===> bool
 console.log(q4.includes("A", 0)); // true
 console.log(q4.includes("A", 15)); // false
-// startsWith("value",point of start) ===> bool
+// startsWith("search text",point of start) ===> bool
 console.log(q4.startsWith("Mohamed")); // true
 // endsWith("value",point of start) ===> bool
 console.log(q4.endsWith("Abdo")); // true
