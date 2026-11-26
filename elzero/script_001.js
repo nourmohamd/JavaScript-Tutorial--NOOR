@@ -105,7 +105,7 @@ console.log("a" + " " + "b" + "\n" + "c" + " " + "d");
  * c d
  */
 
-// Backtick
+// Template Literals ( Backtick `` )
 var d = "Mohamed Nour Abdo";
 var e = "I 'm good";
 console.log(`Hi ${d} ,
