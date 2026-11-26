@@ -351,33 +351,33 @@ console.log(q6[3]); // undefined
 
 // Array method (Add && Remove)
 
-// unshift(el1,el2,el3,....) - add element in front array
+// unshift(el1,el2,el3,....) - add element in front array And Return New Length Of Array
 q6.unshift(11, 12, 13, 14);
 console.log(q6.length); // 7
-// shift() - remove first element from array
+// shift() - remove first element from array And Return Removed Element Or Undefiend If Array is Empty
 q6.shift();
 console.log(q6.length); // 6
-// push(el1,el2,el3,....) - add element in last array
+// push(el1,el2,el3,....) - add element in last array And Return New Length Of Array
 q6.push(11, 12, 13, 14);
 console.log(q6.length); // 10
-// pop() - remove last element from array
+// pop() - remove last element from array And Return Removed Element Or Undefiend If Array is Empty
 q6.pop();
 console.log(q6.length); // 9
 
 // Searching Array
 
-// indexOf(element, point of start)
+// indexOf(element, point of start) Return index of Element or -1 If Not Found
 // 12 13 14 1 2 3 11 12 13
 console.log(q6.indexOf(12)); // 0
-// lastIndexOf(element, point of start)
+// lastIndexOf(element, point of start) Return index of Element or -1 If Not Found
 console.log(q6.lastIndexOf(12)); // 7
-// includes(element, point of start)
+// includes(element, point of start) Return true or false
 console.log(q6.includes(11)); // true
 
 // Sorting Array
-// nameArray.sort()
+// nameArray.sort() Return The Same Array After Sorting But Sorted Elements By First Number Or First Letter If Array Was Strings
 console.log(q6.sort());
-// nameArray.reverse()
+// nameArray.reverse() Return Array After Reversed
 console.log(q6.reverse());
 
 // Slicing Array
